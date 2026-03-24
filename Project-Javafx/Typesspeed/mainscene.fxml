@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2D383A;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Text fx:id="mainlabel" fill="#fffafa" layoutX="206.0" layoutY="70.0" stroke="#faeded" strokeType="INSIDE" strokeWidth="0.0" text="Type Speed" textAlignment="CENTER" wrappingWidth="280.62384033203125">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="53.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <VBox fx:id="Buttons" alignment="CENTER" layoutX="261.0" layoutY="116.0" prefHeight="200.0" prefWidth="178.0" style="-fx-spacing: 20;">
+         <children>
+            <Button fx:id="easyButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#easyklikniecie" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: lightgreen; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: black;" text="Easy" textAlignment="CENTER" textFill="WHITE"> 
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="mediumButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#mediumklikniecie" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: orange;-fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: black;" text="Medium" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="hardButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#hardklikniecie" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: red;-fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: black;" text="Hard" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <TextField fx:id="pobieranie" alignment="CENTER" layoutX="197.0" layoutY="296.0" prefHeight="40.0" prefWidth="298.0" promptText="Wpisz tekst i kliknij enter" style="-fx-background-color: gray; -fx-border-color: black; -fx-border-width: 1;" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <Text fx:id="Tekst" fill="WHITE" layoutX="134.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" visible="false" wrappingWidth="431.199899339676">
+         <font>
+            <Font size="61.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <TextArea fx:id="Area" editable="false" layoutX="113.0" layoutY="70.0" prefHeight="260.0" prefWidth="474.0" style="-fx-background-color: grey;" visible="false">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="Exit" contentDisplay="CENTER" layoutX="257.0" layoutY="336.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: red; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: black;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+
+</AnchorPane>

@@ -14,4 +14,6 @@ HashMap jest używany do przechowywania kolekcji
 danych jako pary klucz i wartość. Jeden obiekt jest używany jako klucz (indeks) 
 do innego obiektu (wartość). 
 Sa rozne metody np.put, remove i get
+nie może zawierać duplikatów kluczy. Dodanie nowego elementu z kluczem, który już istnieje, 
+nadpisuje stary element.
 */
